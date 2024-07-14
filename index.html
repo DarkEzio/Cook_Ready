@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Cook Ready</title>
+</head>
+<body>
+    <label>
+        <center>
+        <h1>Che nazionalita' deve avere la ricetta?</h1>
+        <input type="search" id="nazionalita">
+        <a href="https://spoonacular.com/food-api/docs#Cuisines"><input type="submit" value="Nazioni"></a>
+        <h1>A cosa sei intolerante?</h1>
+        <input type="search" id="intolerante">
+        <a href="https://spoonacular.com/food-api/docs#Intolerances"> <input type="submit" value="Intolleranze"></a>
+        <h1>Seleziona i tuoi ingredienti <p id="avvertenza">(separa con una virgola)</p></h1>
+        <input type="search" id="ingredienti">
+        
+        <p></p>
+        <input type="submit" value="Aggiungi ingrediente" onclick="totale()">
+    </label>
+    <h2>Ingredienti:</h2>
+    <h3 id="lista"></h3>
+    <input type="submit" value="Cerca ricette" onclick="ricette()">
+    
+    <h3>Ricetta:</h3>
+    <p id="titolo_ricetta"></p>
+    <img src="" alt="" id="img">
+</body>
+</html>
